@@ -4,7 +4,7 @@
 title:  曹恒的博客# 网站的标题
 
 description: # 网站的描述，可能会出现在搜索引擎展示结果中
-url: "https://caohengvs/caoheng.github.io" # 网站地址
+url: "https://caohengvs.github.io/caoheng.github.io/" # 网站地址
 github_repo: "caohengvs/caoheng.github.io"
 github_profile: "https://github.com/caohengvs" # GitHub 个人主页
 paginate: 5 # 主页展示的博客文章数量
