@@ -20,6 +20,7 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/knightyun/knightyun.github.io)](https://github.com/knightyun/knightyun.github.io/commit/master)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/knightyun/knightyun.github.io)](https://github.com/knightyun/knightyun.github.io/graphs/commit-activity)
 ![GitHub repo size](https://img.shields.io/github/repo-size/knightyun/knightyun.github.io)
+
 </div>
 
 ## Features
@@ -42,6 +43,7 @@ jekyll guide：<https://www.jekyll.com.cn/>
 The configuration file `_config.yml` locates in the root directory, looking for more details about the parameters of this file, please see the official documentation: <https://www.jekyll.com.cn/docs/configuration/>
 
 Example config of my website:
+
 ```yml
 # Welcome to Jekyll!
 #
@@ -92,6 +94,7 @@ Commit and push your code to the remote repo, you may wait for a long time to se
 Detialed tutorial: [Install jekyll](https://knightyun.github.io/2018/04/01/github-pages-blog#%E5%AE%89%E8%A3%85jekyll-)
 
 run code bellow in shell after configuring well：
+
 ```cmd
 bundle exec jekyll s
 ```

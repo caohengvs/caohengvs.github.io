@@ -20,6 +20,7 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/knightyun/knightyun.github.io)](https://github.com/knightyun/knightyun.github.io/commit/master)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/knightyun/knightyun.github.io)](https://github.com/knightyun/knightyun.github.io/graphs/commit-activity)
 ![GitHub repo size](https://img.shields.io/github/repo-size/knightyun/knightyun.github.io)
+
 </div>
 
 ## 特性
@@ -42,6 +43,7 @@ jekyll 使用教程：<https://www.jekyll.com.cn/>
 配置文件是位于主目录的 `_config.yml`，关于配置的完整参数介绍和默认值等内容，请查阅官网文档：<https://www.jekyll.com.cn/docs/configuration/>
 
 以下是我的网站配置示例，以供参考：
+
 ```yml
 # 以下为自定义的全局变量，可以在 HTML 文件中引用，
 # 比如代码：<h1>{{ site.title }}</h1> 
@@ -83,6 +85,7 @@ theme: jekyll-theme-slate
 详细教程请见：[安装 jekyll](https://knightyun.github.io/2018/04/01/github-pages-blog#%E5%AE%89%E8%A3%85jekyll-)
 
 配置好依赖后在项目主目录运行：
+
 ```cmd
 bundle exec jekyll s
 ```
