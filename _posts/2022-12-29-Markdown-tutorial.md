@@ -18,13 +18,14 @@ excerpt: 简要 markdown 语法
 
 **Markdown　Extra**　表格语法：
 
-项目     | 价格
----------|------
-Computer | $1600
-Phone    | $12
-Pipe     | $1
+| 项目       | 价格    |
+| -------- | ----- |
+| Computer | $1600 |
+| Phone    | $12   |
+| Pipe     | $1    |
 
 写法：
+
 ```markdown
 项目     | 价格
 ---------|------
@@ -35,13 +36,14 @@ Pipe     | $1
 
 可以使用冒号来定义对齐方式：
 
-| 项目      |   价格  |  数量 |
-|:--------- |--------:|:----:|
-| Computer  | 1600 元 |  5   |
-| Phone     |   12 元 |  12  |
-| Pipe      |    1 元 | 234  |
+| 项目       | 价格     | 数量  |
+|:-------- | ------:|:---:|
+| Computer | 1600 元 | 5   |
+| Phone    | 12 元   | 12  |
+| Pipe     | 1 元    | 234 |
 
 写法：
+
 ```markdown
 | 项目      |   价格  |  数量 |
 |:--------- |--------:|:----:|
@@ -51,21 +53,23 @@ Pipe     | $1
 ```
 
 ### 插入图片
- > 格式一：
- 
-``` markdown
+
+> 格式一：
+
+```markdown
  ![picture-name](http://xxx.com/xxx.png)
 ```
 
 > 格式二：(方便设置图片尺寸)
 
-``` html
+```html
 <img src="http://xxx.com/xxx.png" alt="download-failed" width="XXXpx"  height="XXXpx">
 ```
 
 ### 定义列表
 
 **Markdown Extra** 定义列表语法：
+
 - 项目１
 - 项目２
   - 定义 A
@@ -77,9 +81,10 @@ Pipe     | $1
 
 :   定义 D
 
-	> 定义 E
+    > 定义 E
 
 写法：
+
 ```markdown
 - 项目１
 - 项目２
@@ -92,11 +97,13 @@ Pipe     | $1
 
 :   定义 D
 
-	> 定义 E
+    > 定义 E
 ```
 
 ### 代码块
+
 代码块语法遵循标准markdown代码，例如：
+
 > python:
 
 ```python
@@ -118,7 +125,7 @@ class SomeClass:
 #include <stdio.h>
 int main()
 {
-	printf("Hello world!");
+    printf("Hello world!");
 }
 ```
 
@@ -128,6 +135,7 @@ int main()
   [^footnote]: 这里是 **脚注** 的 *内容*.
 
 写法：
+
 ```markdown
 生成一个脚注[^footnote].
   [^footnote]: 这里是 **脚注** 的 *内容*.
@@ -142,6 +150,7 @@ int main()
 数学公式为：$ \Gamma(n) = (n-1)!\quad\forall n\in\mathbb N $。
 
 写法：
+
 ```markdown
 数学公式为：$ \Gamma(n) = (n-1)!\quad\forall n\in\mathbb N $。
 ```
@@ -151,6 +160,7 @@ int main()
 $$ x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 写法：
+
 ```markdown
 $$ x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 ```
@@ -159,19 +169,21 @@ $$ x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 ## 浏览器兼容
 
- 1. 目前，本编辑器对 **Chrome** 浏览器支持最为完整。建议大家使用较新版本的 Chrome。
- 3. **IE9** 以下不支持
- 4. **IE9，10，11** 存在以下问题
-    1. 不支持离线功能
-    1. IE9 不支持文件导入导出
-    1. IE10 不支持拖拽文件导入
+1. 目前，本编辑器对 **Chrome** 浏览器支持最为完整。建议大家使用较新版本的 Chrome。
+2. **IE9** 以下不支持
+3. **IE9，10，11** 存在以下问题
+   1. 不支持离线功能
+   2. IE9 不支持文件导入导出
+   3. IE10 不支持拖拽文件导入
 
 ## 常用 Markdown 编辑器推荐
 
 1. **Markdownpad**： 详情请点击 [官网](http://markdownpad.com/)。
-（貌似专业版需要收取一定dollars$，需要序列号自行baidu。）
+   （貌似专业版需要收取一定dollars$，需要序列号自行baidu。）
+
 2. **Markpad**：详情前往 [官网](http://markpad.fluid.impa.br/)。
-（推荐使用，Microsoft Store也有，完全免费，支持及时效果浏览。）
+   （推荐使用，Microsoft Store也有，完全免费，支持及时效果浏览。）
+
 3. **CSDN博客编辑器**：CSDN网站内置编辑器。（这篇文件就是这样写出来的-_-)
 
 4. **Harropad**: [官网](http://pad.haroopress.com/user.html)

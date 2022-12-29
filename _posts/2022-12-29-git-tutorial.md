@@ -1,4 +1,14 @@
+---
+title:  Git教程
+layout: post
+categories: git
+tags: git
+excerpt: git教程
+---
+
 # Git学习
+
+## Git仓库初始化
 
 ## Git指令
 
@@ -42,8 +52,6 @@
     git add .
     ```
   
-  - 
-  
   - 将暂存区的内容提交到本地仓库
     
     ```git
@@ -55,5 +63,13 @@
     ```git
     git push [origin]
     ```
-    
-    
+
+- 查看文件或文件夹在工作区和暂存区中的状态
+  
+  ```git
+  git status
+  ```
+
+<img title="" src="file:///C:/Users/Administrator/AppData/Roaming/marktext/images/2022-12-29-17-39-22-1672306758474.png" alt="" data-align="center" width="483">
+
+        显示工作区中有一个文件没有被追踪，使用git add 文件名将该文件保存到暂存区。
