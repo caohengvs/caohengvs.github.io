@@ -32,12 +32,19 @@ _ _ _
   git commit -m "初始提交"
   ```
 
-+ 设置远程仓库地址并将本地仓库内容提交到远程仓库
++ 设置远程仓库地址
   
   ```git
-  git add remote origin 远程仓库地址
-  git push
+  git remote add orign 远程仓库地址
   ```
+
++ 提交代码到远程仓库的master分支
+  
+  ```git
+  git push -u orign master
+  ```
+  
+  
 
 ## Git指令
 
