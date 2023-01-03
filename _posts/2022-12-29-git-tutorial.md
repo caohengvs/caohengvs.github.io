@@ -6,9 +6,38 @@ tags: git
 excerpt: git教程
 ---
 
+_ _ _
+
 # Git学习
 
 ## Git仓库初始化
+
++ 先在Github或其他远程仓库网站建立个人仓库
+
++ 初始化本地仓库
+  
+  ```git
+  git init
+  ```
+
++ 添加本地文件到工作目录
+  
+  ```git
+  git add .
+  ```
+
++ 追踪本地本地到本地仓库
+  
+  ```git
+  git commit -m "初始提交"
+  ```
+
++ 设置远程仓库地址并将本地仓库内容提交到远程仓库
+  
+  ```git
+  git add remote origin 远程仓库地址
+  git push
+  ```
 
 ## Git指令
 
