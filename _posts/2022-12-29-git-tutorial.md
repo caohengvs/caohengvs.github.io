@@ -10,7 +10,7 @@ _ _ _
 
 # Git学习
 
-## Git仓库初始化
+## 仓库初始化
 
 + 先在Github或其他远程仓库网站建立个人仓库
 
@@ -38,74 +38,112 @@ _ _ _
   git remote add orign 远程仓库地址
   ```
 
-+ 提交代码到远程仓库的master分支
++ 提交代码到远程仓库的main分支
   
   ```git
-  git push -u orign master
+  git push -u orign main
   ```
-  
-  
 
-## Git指令
+## 分支操作
 
-- git设置上游仓库并同步
-  
-  - 添加上游仓库
-    
-    ```git
-    git remote add upstream 远程仓库地址
-    ```
-  
-  - 查看目前远程仓库信息
-    
-    ```git
-    git remote -v
-    ```
-  
-  - 拉取上游仓库到本地
-    
-    ```git
-    git fetch upstream master
-    ```
-  
-  - 合并代码
-    
-    ```git
-    git merge upstream/master
-    ```
-  
-  - 推送到自己的仓库
-    
-    ```git
-    git push [origin]
-    ```
+已知存在一个master分支
 
-- git提交
++ 建立一个新的分支main
   
-  - 将工作目录内容添加到暂存区
-    
-    ```git
-    git add .
-    ```
+  ```git
+  git checkout -b main
+  ```
+
++ 查看当前存在的分支
   
-  - 将暂存区的内容提交到本地仓库
-    
-    ```git
-    git commit -m "注释说明文字"
-    ```
+  ```git
+  git branch
+  ```
+
++ 合并分支master到分支main
   
-  - 推送本地仓库内容到远程仓库
-    
-    ```git
-    git push [origin]
-    ```
+  ```git
+  git merge master
+  ```
+
++ 提交分支
+  
+  ```git
+  git pull origin main --allow-unrelated-histories
+  
+  NOTE:
+  加上后面这个选项允许不相关历史提交
+  --allow-unrelated-histories
+  ```
+
++ 删除本地分支master
+  
+  ```git
+  git branch -D master
+  ```
+
++ 删除远程库上的分支master
+  
+  ```git
+  git push origin --delete master
+  ```
+
+## 设置上游仓库并同步
+
+- 添加上游仓库
+  
+  ```git
+  git remote add upstream 远程仓库地址
+  ```
+
+- 查看目前远程仓库信息
+  
+  ```git
+  git remote -v
+  ```
+
+- 拉取上游仓库到本地
+  
+  ```git
+  git fetch upstream master
+  ```
+
+- 合并代码
+  
+  ```git
+  git merge upstream/master
+  ```
+
+- 推送到自己的仓库
+  
+  ```git
+  git push [origin]
+  ```
+
+## 提交
+
+- 将工作目录内容添加到暂存区
+  
+  ```git
+  git add .
+  ```
+
+- 将暂存区的内容提交到本地仓库
+  
+  ```git
+  git commit -m "注释说明文字"
+  ```
+
+- 推送本地仓库内容到远程仓库
+  
+  ```git
+  git push [origin]
+  ```
 
 - 查看文件或文件夹在工作区和暂存区中的状态
   
   ```git
   git status
   ```
-
-<img title="" src="file:///C:/Users/Administrator/AppData/Roaming/marktext/images/2022-12-29-17-39-22-1672306758474.png" alt="" data-align="center" width="483">
 
         显示工作区中有一个文件没有被追踪，使用git add 文件名将该文件保存到暂存区。
