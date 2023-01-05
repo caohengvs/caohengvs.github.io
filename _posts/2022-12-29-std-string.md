@@ -4,7 +4,6 @@ layout: post
 categories: c++
 tags: std::string
 excerpt: String类实用
-
 ---
 
 # String类实用
@@ -52,13 +51,26 @@ using namespace std;
   
   ```c++
   ...
-  string strReplace= "adbs<end>";
+  string strReplace = "adbs<end>";
   string strTarget = "<end>";
-  string nIndex = strReplace.replace(0,1,strTarget);
-  ...
+  string strRst = strReplace.replace(0,1,strTarget);
+  ... 
   ```
 
-# 
+## string insert(int nStart,  string strInsert)
+
++ 注解
+  
+  从nStart位置开始插入strInsert
+
++ 用例
+  
+  ```c++
+  ...
+  string strTarget = "adbs<end>";
+  string strRst = strTarget.insert(0,strInsert);
+  ...
+  ```
 
 ## regex的运用
 
