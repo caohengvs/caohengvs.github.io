@@ -46,7 +46,7 @@ _ _ _
 
 ## 分支操作
 
-已知存在一个master分支
+所有操作在main分支上，已知存在一个master分支
 
 + 建立一个新的分支main
   
@@ -146,4 +146,20 @@ _ _ _
   git status
   ```
 
-        显示工作区中有一个文件没有被追踪，使用git add 文件名将该文件保存到暂存区。
+## 常用操作总结
++ 更新代码
+```git
+git stash 
+git pull --rebase
+git stash pop 
+解决冲突文件
+```
++ gerrit上代码还未合并时,更新上次提交
+```git
+git commit --amend --no-edit
+```
++ 回到上次提交
+```git
+git reflog
+git reset commitID（之前的commitID）
+```
